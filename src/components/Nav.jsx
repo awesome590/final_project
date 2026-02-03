@@ -1,6 +1,6 @@
 import React from 'react'
-import {Link} from 'react-dom'
-import {reactLogo} from '../assets/react.svg'
+import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Nav = ({numberOfItems}) => {
     function openMenu() {
@@ -15,7 +15,7 @@ const Nav = ({numberOfItems}) => {
         <nav>
             <div className="nav__container">
                 <Link to="/">
-                    <img src={reactLogo} alt="" className='logo'/>
+                    <img src="" alt="Logo" className='logo'/>
                 </Link>
                 <ul className='nav__links'>
                     <li className='nav__list'>
@@ -25,9 +25,11 @@ const Nav = ({numberOfItems}) => {
                         <Link to="/books" className='nav__link'>Books</Link>
                     </li>
                     <button className='btn__menu' onClick={openMenu}>
+                        <FontAwesomeIcon icon='bars' />
                     </button>
                     <li className="nav__icon">
                         <Link to="/cart" className='nav__link'>
+                            <FontAwesomeIcon icon='shopping-cart' />
                         </Link>
                         {
                             numberOfItems > 0 && <span className='cart__length'>{numberOfItems}</span>
@@ -36,6 +38,7 @@ const Nav = ({numberOfItems}) => {
                 </ul>
                 <div className="menu__backdrop">
                     <button className="btn__menu btn__menu--close" onClick={closeMenu}>
+                        <FontAwesomeIcon icon='times' />
                     </button>
                     <ul className="menu__links">
                         <li className="menu__list">
