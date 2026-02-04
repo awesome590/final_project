@@ -224,5 +224,21 @@ LANDING
 */
 
 #landing {
+  display: flex;
+  justify-content: center;
   background-color: rgba(115, 66, 214, 0.1)
+}
+/*
+FOOTER
+ */
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_links {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+
 }
