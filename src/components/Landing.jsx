@@ -2,14 +2,18 @@ import React from 'react'
 
 function Landing() {
     return (
-        <div id='landing'>
-            <form>
-                <label>
-                    Search:
-                </label>
-                <input type='text'></input>
-            </form>
-        </div>
+        <section id='landing'>
+            <header>
+                <div className="header__container">
+                    <div className="header__description">
+                        <h1>Any game you could want</h1>
+                    </div>
+                    <form>
+                        <input type='text' placeholder="Search here"></input>
+                    </form>
+                </div>
+            </header>
+        </section>
     )
 }
 
