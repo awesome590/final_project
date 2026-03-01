@@ -1,10 +1,9 @@
 import React from 'react'
-function Game() {
-    const Game =({title, price, image}) => {
+function Game({title, price, image}) {
         return (
             <div className="game__card">
                 <img
-                    src={image}
+                    src={image || null}
                     alt={title}
                     className="game__image"
                 />
@@ -13,6 +12,5 @@ function Game() {
             </div>
         )
     }
-}
 
 export default Game

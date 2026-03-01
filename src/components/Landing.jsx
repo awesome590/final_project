@@ -9,7 +9,7 @@ function Landing() {
                         <h1>Any game you could want</h1>
                     </div>
                     <form>
-                        <input type='text' placeholder="Search here" className="search__bar"></input>
+                        <input type='text' placeholder="   Search here" className="search__bar"></input>
                     </form>
                 </div>
             </header>

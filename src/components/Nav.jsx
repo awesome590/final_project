@@ -22,7 +22,7 @@ const Nav = ({numberOfItems}) => {
                         <Link to="/" className='nav__link'>Home</Link>
                     </li>
                     <li className='nav__list'>
-                        <Link to="/books" className='nav__link'>Games</Link>
+                        <Link to="/games" className='nav__link'>Games</Link>
                     </li>
                     <button className='btn__menu' onClick={openMenu}>
                         <FontAwesomeIcon icon='bars' />

@@ -33,6 +33,7 @@ p {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 a:hover {
   text-decoration: underline;
@@ -203,6 +204,8 @@ form {
 .search__bar {
   width: 100%;
   max-width: 1200px;
+  height: 48px;
+  border-radius: 24px;
 }
 /*
 GAME CARD

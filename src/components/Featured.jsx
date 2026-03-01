@@ -16,7 +16,7 @@ function Featured() {
         <div className="featured">
             {games.slice(0,12).map(game => (
                 <Game
-                    key={game.gameID}
+                    key={game.dealID}
                     title={game.external}
                     price={game.cheapest}
                     image={game.thumb}
