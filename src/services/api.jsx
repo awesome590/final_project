@@ -7,5 +7,5 @@ export const fetchGame = async ({query,}) => {
         : `${API_CONFIG.BASE_URL}/games`
     const response = await fetch(endpoint);
     const data = await response.json();
-    return data.results;
+    return data;
 }

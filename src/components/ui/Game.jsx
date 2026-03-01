@@ -1,6 +1,12 @@
 import React from 'react'
-
 function Game() {
+    const Game =({title, price, image}) => (
+        <div>
+            <img src={image} alt={title} />
+            <p>{title}</p>
+            <p>{price}</p>
+        </div>
+    )
     return (
         <div className="game__card">
             <img
