@@ -9,5 +9,12 @@ export const fetchSearch = async ({query} = {}) => {
         : `${API_CONFIG.BASE_URL}/deals`
     const response = await fetch(endpoint);
     const data = await response.json();
-    return data;
+
+    const seen = new Set()
+    const unique = data.filter(item => {
+        if (seen.has(item.gameID)) return false
+        seen.add(item.gameID)
+        return true
+    })
+    return unique;
 }

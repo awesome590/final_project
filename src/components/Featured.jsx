@@ -15,7 +15,6 @@ function Featured() {
     return (
         <div className="featured">
             {games
-                .filter(game => game.gameID !== game.gameID)
                 .slice(0,12)
                 .map(game => (
                 <Game
