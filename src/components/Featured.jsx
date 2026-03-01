@@ -4,7 +4,7 @@ import Game from "./ui/Game.jsx";
 
 function Featured() {
     return (
-        <div>
+        <div className="featured">
             <Game/>
         </div>
     )
