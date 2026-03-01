@@ -14,11 +14,14 @@ function Featured() {
     }, []);
     return (
         <div className="featured">
-            {games.slice(0,12).map(game => (
+            {games
+                .filter(game => game.gameID !== game.gameID)
+                .slice(0,12)
+                .map(game => (
                 <Game
                     key={game.dealID}
-                    title={game.external}
-                    price={game.cheapest}
+                    title={game.title}
+                    price={game.salePrice}
                     image={game.thumb}
                 />
             ))}
