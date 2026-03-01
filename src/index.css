@@ -204,7 +204,7 @@ GAME CARD
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
+  width: calc(100% / 3);
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
@@ -218,12 +218,12 @@ GAME CARD
 /*
 FOOTER
  */
-footer {
+.footer_container {
   max-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 24px 0 24px
+  padding: 0 24px 0 24px;
 }
 .footer_links {
   width: 100%;

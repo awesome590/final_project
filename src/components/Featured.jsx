@@ -1,20 +1,20 @@
 import React, {useEffect, useState} from 'react'
 import Game from "./ui/Game.jsx";
-import {fetchGame} from "../services/api.jsx";
+import {fetchSearch} from "../services/api.jsx";
 
 function Featured() {
 
     const [games, setGames] = useState([]);
     useEffect(() => {
         const load = async () => {
-            const data = await fetchGame({query: "batman"})
+            const data = await fetchSearch()
             setGames(data)
         }
         load()
     }, []);
     return (
         <div className="featured">
-            {games.map(game => (
+            {games.slice(0,12).map(game => (
                 <Game
                     key={game.gameID}
                     title={game.external}
@@ -22,8 +22,6 @@ function Featured() {
                     image={game.thumb}
                 />
             ))}
-            <Game/>
-            <Game/>
         </div>
     )
 }
