@@ -192,7 +192,9 @@ LANDING
 FEATURED
  */
 .featured {
-  margin: 0 24px 0 24px;
+  margin: 0 24px 24px 24px;
+  display: flex;
+justify-content: space-between;
 }
 /*
 GAME CARD

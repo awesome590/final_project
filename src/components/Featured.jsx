@@ -6,6 +6,8 @@ function Featured() {
     return (
         <div className="featured">
             <Game/>
+            <Game/>
+            <Game/>
         </div>
     )
 }
