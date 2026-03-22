@@ -18,12 +18,6 @@ const Nav = ({numberOfItems}) => {
                     <img src="" alt="Logo" className='logo'/>
                 </Link>
                 <ul className='nav__links'>
-                    <li className='nav__list'>
-                        <Link to="/" className='nav__link'>Home</Link>
-                    </li>
-                    <li className='nav__list'>
-                        <Link to="/games" className='nav__link'>Games</Link>
-                    </li>
                     <button className='btn__menu' onClick={openMenu}>
                         <FontAwesomeIcon icon='bars' />
                     </button>
