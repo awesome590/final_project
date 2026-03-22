@@ -13,7 +13,7 @@ function Featured() {
         load()
     }, []);
     return (
-        <div className="featured">
+        <section className="featured">
             {games
                 .slice(0,12)
                 .map(game => (
@@ -24,7 +24,7 @@ function Featured() {
                     image={game.thumb}
                 />
             ))}
-        </div>
+        </section>
     )
 }
 
