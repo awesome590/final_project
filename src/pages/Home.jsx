@@ -4,10 +4,10 @@ import Featured from "../components/Featured.jsx";
 
 function Home() {
     return (
-        <>
+        <section id="home">
             <Landing></Landing>
             <Featured></Featured>
-        </>
+        </section>
     )
 }
 
